@@ -29,5 +29,11 @@ namespace ThangPQ_PlayerManagement.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ThangPQ_PlayerManagement.Models.Player> Players { get; set; }
+
+        public System.Data.Entity.DbSet<ThangPQ_PlayerManagement.Models.PlayerAchievement> PlayerAchievements { get; set; }
+
+        public System.Data.Entity.DbSet<ThangPQ_PlayerManagement.Models.Achievement> Achievements { get; set; }
     }
 }

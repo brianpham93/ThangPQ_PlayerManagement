@@ -33,7 +33,7 @@ namespace ThangPQ_PlayerManagement.Models
         [Required]
         public Boolean status { get; set; }
 
-        public ICollection<PlayerAchievement> achievements { get; set; }
+        public virtual ICollection<PlayerAchievement> achievements { get; set; }
 
         public Player(String clubName, String id, int number, String name, String position,
             DateTime dateOfBirth, String placeOfBirth, double weight, double height, String description, String imageLink,
